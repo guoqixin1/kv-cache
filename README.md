@@ -5,7 +5,11 @@
 
 目前（2025/03/17）还未上传代码
 
-此仓库当前处于草稿状态，代码由AI工具完成，并不保证能运行，也可能与原文思路存在误差，仅供学习参考使用，后续可能会进行人工复现
+此仓库当前处于草稿状态，代码由AI工具完成，并不保证能运行，也可能与原文思路存在误差，仅供学习参考使用，后续可能会进行人工复现，也欢迎PR
+
+This repository is currently in a draft state, and the code is completed by AI tools. It cannot be guaranteed to run and may have errors in the original idea. 
+
+It is only for learning and may be manually reproduced in the future. Please feel free to submit a PR
 
 ## 数据准备
 首先，加载并预处理训练数据，包括 Self-Instruct、P3、LongAlpaca 等数据集。将每条数据划分为 context（上下文）、question（提问）和 answer（回答）三部分，并使用 Hugging Face 的 datasets 和 transformers 工具将文本转换为模型可用的 token IDs。为了简洁起见，这里演示性地加载部分数据，并进行必要的预处理。注意实际处理中可能需要根据内存情况对 P3 等大型数据集进行采样或拆分。
